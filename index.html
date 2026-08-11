@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+     .bg-img{
+    position: relative;
+    background-color:#fff;
+
+    background-image:
+        linear-gradient(#d9f0ff 8px, transparent 8px),
+        linear-gradient(90deg,#d9f0ff 8px, transparent 8px);
+
+    background-size:80px 80px;
+    overflow:hidden;
+}
+
+
+    .tilt-right {
+        transform: rotate(3deg);
+        font-size: 40px;
+        color: #00adff;
+        font-weight: 900;
+        display: inline-block;
+    }
+    .tilt-top {
+
+        transform: rotate(-5deg);
+
+        font-size: 11px;
+        background-color: #82ce50;
+        font-weight: 900;
+        border: 3px solid black;
+    }
+    .text-img{
+        font-size: 58px;
+        font-weight: 900;
+        transform: rotate(-7deg);
+    }
+    .picture{
+      transform: rotate(-5deg);
+    }
+    .fotter-text {
+    background-color: white;
+    box-shadow: -5px 5px black;
+    font-size: clamp(10px, 1.3vw, 15px);
+    }
+    .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: end;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+
+/* Instagram */
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+/* Facebook */
+.facebook {
+    background: #4267B2;
+}
+
+/* Snapchat */
+.snapchat {
+    background: #FFFC00;
+    color: black;
+}
+
+/* TikTok */
+.tiktok {
+    background: #000000;
+}
+
+/* YouTube */
+.youtube {
+    background: #FF0000;
+}
+.card-width{
+    width: 280px;
+}
+    /* Large screens (992px and above) */
+    @media (min-width: 992px) {
+        .tilt-right {
+            font-size: 67px;
+        }
+        .tilt-top {
+            font-size: 31px;
+        }
+        .bg-img {
+            background-size: 100px 100px;
+        }
+        .car-img {
+           
+            margin-left: 0px;
+        }
+
+   
+    }
+    @media (max-width: 480px) {
+           .btn-lg{
+            font-size: 11px;
+            }
+        }
+        @media (max-width: 992px) {
+            .card-container {
+                overflow:scroll;
+                height: 100vh;
+            }
+        }
+    /* Extra large screens (1200px and above) */
+    @media (min-width: 1200px) {
+        .tilt-right {
+            font-size: 75px;
+        }
+        .tilt-top {
+            font-size: 40px;
+        }
+        .car-img {
+           
+            margin-left: 5rem;
+        }
+         .fotter-text{
+    
+        font-size: 24px;
+
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+  <div class="container bg-img">
+    <nav class="navbar navbar-expand-lg rounded-4 bg-light navbar-light shadow border m-auto mt-5 sticky-top p-1" style="width: 90%;">
+        <div class="container">
+
+            <a class="navbar-brand" href="#"><img src="img/Screenshot 2026-08-04 122514.png" alt="" width="200px"></a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                <div class="navbar-nav ms-auto gap-3">
+                    <a class="nav-link active btn px-4 rounded-5 text-white border fw-semibold" aria-current="page" href="#" style="background-color: #00adff;">Home</a>
+                    <a class="nav-link fw-semibold mx-auto" href="#">Features</a>
+                    <a class="nav-link fw-semibold mx-auto" href="#">Features</a>
+                    <a class="nav-link fw-semibold mx-auto" href="#">Features</a>
+                    <a class="nav-link fw-semibold mx-auto" href="#">Features</a>
+                    <a class="nav-link fw-semibold mx-auto" href="#">Pricing</a>
+                    <a class="nav-link btn px-4 rounded-3 text-white border fw-semibold href="#" tabindex="-1" aria-disabled="true" style="background-color: #82ce50;">Disabled</a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 m-auto" style="width: 90%;">
+        <div class="row main-content">
+            <div class="col-md-7">
+                <h1 class="display-4 fw-bold text-nowrap">PASSER LE PEROMIS ?</h1>
+                <h1 class="display-4 text-nowrap tilt-right">UN JEU D'ENFANT</h1>
+                <p class="fs-5 fw-normal">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur</p>
+                <div class="mt-4 d-flex gap-5">
+                    <button class="btn btn-primary btn-lg text-nowrap px-md-5 rounded-5" style="background-color: #00adff;">Inscription Gratuite</button>
+                    <button class="btn btn-primary btn-lg text-nowrap px-md-5 rounded-5" style="background-color: #2c3f45;">Contact Us</button>
+                </div>
+            </div>
+             <div class="col-md-5">
+                <img src="img/ChatGPT Image Aug 4, 2026, 02_01_40 PM.png" alt="" class="car-img img-fluid" >
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 m-auto text-center">
+                <h2 class="ps-2 text-light text-nowrap w-50 fw-bolder mx-auto mb-4 tilt-top">POURQUOL NOUSCHOISIR ?</h2>
+                <div class=" col-md-6 mx-auto">
+                    <div class=" d-flex">
+                        <i class="ri-steering-2-fill" style="color: #00adff; font-size: 78px;"></i>
+                        <div class="d-block mt-4 ms-3">
+                            <p class="fw-semibold mb-2">Learn more about our company and what we do.</p>
+                            <p class="fw-normal" style="color: rgb(147, 152, 157);">Learn more about our company and what we do.</p>
+                        </div>
+                    </div>
+                   <div class=" d-flex">
+                        <i class="fa-solid fa-headset support-icon" style="color: #82ce50 ; font-size: 78px;"></i>
+                        <div class="d-block mt-4 ms-3">
+                            <p class="fw-semibold mb-2">Learn more about our company and what we do.</p>
+                            <p class="fw-normal" style="color: rgb(147, 152, 157);">Learn more about our company and what we do.</p>
+                        </div>
+                    </div>
+                    <div class=" d-flex">
+                        <i class="fa-solid fa-euro-sign euro-icon" style="color: rgba(255, 0, 0, 0.671); font-size: 99px;"></i>
+                        <div class="d-block mt-4 ms-3">
+                            <p class="fw-semibold mb-2">Learn more about our company and what we do.</p>
+                            <p class="fw-normal" style="color: rgb(147, 152, 157);">Learn more about our company and what we do.</p>
+                        </div>
+                    </div>
+                    
+                        <div class="mt-4 d-flex gap-5">
+                            <button class="btn btn-primary btn-lg text-nowrap px-md-5 rounded-5" style="background-color: #00adff;">Inscription Gratuite</button>
+                            <button class="btn btn-primary btn-lg text-nowrap px-md-5 rounded-5" style="background-color: #2c3f45;">Contact Us</button>
+                        </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="col-md-11 ms-auto mt-3 text-center">
+        <div>
+            <img src="img/ChatGPT Image Aug 5, 2026, 04_20_26 PM.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    
+<div class="container d-none d-md-block bg-img">
+    
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <img src="img/ChatGPT Image Aug 5, 2026, 05_07_50 PM.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    
+    <div class="row align-items-center justify-content-center">
+        
+        <div class="col-md-4">
+            <div>
+                <img src="img/ChatGPT Image Aug 6, 2026, 02_49_36 PM.png" class="img-fluid" alt="">
+            </div>
+            <div class="ms-auto picture mt-3">
+                <img src="img/ChatGPT Image Aug 6, 2026, 03_23_35 PM.png" class="img-fluid" style="border: 5px solid #00adff;" alt="">
+            </div>
+            <div style="margin-top: 10rem;">
+                <h1 class="text-nowrap text-img" style="color:rgba(255, 0, 0, 0.671);">ETAPE 1</h1>
+                <p class="fw-semibold mt-3">lorem ipsum dolor sit amet Sed do , consectetur adipiscing elit. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="ms-auto text-light fw-bold" style="background-color: rgba(255, 0, 0, 0.671); padding: 10px; width: 50%;     box-shadow: -5px 5px black;">Reserve Maintenant</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4 text-center">
+            <img src="img/ChatGPT Image Aug 6, 2026, 02_40_09 PM.png" style="height: 1000px;" class="img-fluid" alt="">
+        </div>
+        
+        <div class="col-md-4">
+            <div>
+                <h1 class="text-nowrap text-img" style="color: #00adff;">ETAPE 1</h1>
+                <p class="fw-semibold mt-3">lorem ipsum dolor sit amet Sed do , consectetur adipiscing elit. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="ms-auto text-light fw-bold" style="background-color: #00adff; padding: 10px; width: 50%;     box-shadow: -5px 5px black;">Reserve Maintenant</p>
+            </div>
+            <div style="margin-top: 10rem;">
+                <h1 class="text-nowrap text-img" style="color: #82ce50;">ETAPE 1</h1>
+                <p class="fw-semibold mt-3">lorem ipsum dolor sit amet Sed do , consectetur adipiscing elit. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="ms-auto text-light fw-bold" style="background-color: #82ce50; padding: 10px; width: 50%;     box-shadow: -5px 5px black;">Reserve Maintenant</p>
+            </div>
+            <div class="picture" style="margin-top: 10rem;">
+                <img src="img/ChatGPT Image Aug 6, 2026, 03_35_05 PM.png" class="img-fluid" style="border: 8px solid rgba(255, 0, 0, 0.671);" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="col-md-8 mx-auto mt-5">
+            <img src="img/ChatGPT Image Aug 6, 2026, 04_40_24 PM.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+    <div>
+         <div class="mt-3 d-flex mb-3 align-items-center justify-content-center">Ben
+            <div class="d-flex gap-1">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+            </div> 181 avis sur <img src="img/Screenshot 2026-08-07 000841.png" class="img-fluid" alt="">
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 d-flex gap-3 mb-3">
+            <div class="col-md-1 mt-auto">
+                <img src="img/ChatGPT Image Aug 6, 2026, 05_28_52 PM.png" class="img-fluid" style="height: 800px;" alt="">
+            </div>
+            <div class="mx-auto card-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+
+     
+ 
+    
+                        <div class="card card-width">
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+    
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+    
+           
+
+
+                
+    
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+    
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+    
+        
+
+                
+          
+                
+    
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+    
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+    
+    
+                    
+                       
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                       
+                        </div>
+    
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card card-width" >
+                            <div class="card-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <i class="bi bi-person-circle" style="font-size: 2rem;"></i>
+                                
+                                    <div class="">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-subtitle fw-semibold mb-2 text-muted" style="font-size: 10px;">26/08/2023</p>
+                                    </div>
+    
+                                    <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" class="ms-auto" style="width: 30px; height: 30px; border-radius: 50%;">
+                                </div>
+                                <div class="d-flex gap-2 mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="text-muted" style="font-size: 12px;">Last updated 3 mins ago</p>
+                            </div>
+                           
+                        </div>
+   
+    
+               
+            </div>
+            
+            <div class="col-md-1">
+                <img src="img/ChatGPT Image Aug 6, 2026, 05_28_52 EPM.png" class="img-fluid" style="height: 800px;" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 p-5" style="background-color: #2c3f45;">
+ <p class="ms-5" style="font-size: 12px; color: #ffffffa6;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis at distinctio, suscipit reprehenderit provident. </p>
+ <div class="col-8 col-md-4 fw-semibold fs-md-6 text-nowrap fotter-text ms-5 p-2" style="background-color: white; box-shadow: -5px 5px black;">
+    Lorem, ipsum dolor. Lorem, ipsum 
+ </div>
+<div class="social-icons  mt-3">
+
+    <!-- Instagram -->
+    <a href="#" class="social instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="#" class="social facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <!-- Snapchat -->
+    <a href="#" class="social snapchat">
+        <i class="fa-brands fa-snapchat-ghost"></i>
+    </a>
+
+    <!-- TikTok -->
+    <a href="#" class="social tiktok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <!-- YouTube -->
+    <a href="#" class="social youtube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+<p class="text-end text-white me-4">PASSPERMISFACILE</p>
+<p class="text-center text-white ">copyright © 2023 PASSPERMISFACILE. All rights reserved.</p>
+
+</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html> 
